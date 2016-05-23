@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-23T13:21:13.000Z</updated>
+  <updated>2016-05-23T15:55:09.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,24 +16,34 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>第一篇博客</title>
-    <link href="http://yoursite.com/2016/05/23/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <id>http://yoursite.com/2016/05/23/第一篇博客/</id>
-    <published>2016-05-23T13:18:04.000Z</published>
-    <updated>2016-05-23T13:21:13.000Z</updated>
+    <title>函数式编程</title>
+    <link href="http://yoursite.com/2016/05/23/%E2%80%9C%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B%E2%80%9D/"/>
+    <id>http://yoursite.com/2016/05/23/“函数式编程”/</id>
+    <published>2016-05-23T13:49:43.000Z</published>
+    <updated>2016-05-23T15:55:09.000Z</updated>
     
-    <content type="html">&lt;p&gt;hexo 的第一篇博客内容正在整理中即将发布，尽情期待。&lt;/p&gt;
+    <content type="html">&lt;p&gt;函数式的编程思想可以追溯到20世纪30年代阿朗佐－丘奇进行的一项关于问题的可计算性的研究，也就是后来的lambda演算。lambda的本质就一切皆函数，函数可以做作为另外一个函数的输出或输入，一系列的函数使用最终会形成一个表达式链，通过这个表达式链可以最终求得一个值，而这个过程即为计算的本质。在函数式编程中，会发现代码中存在大量的连续运算.&lt;/p&gt;
+&lt;h3 id=&quot;定义函数的3种方式&quot;&gt;&lt;a href=&quot;#定义函数的3种方式&quot; class=&quot;headerlink&quot; title=&quot;定义函数的3种方式:&quot;&gt;&lt;/a&gt;定义函数的3种方式:&lt;/h3&gt;&lt;p&gt;1.使用function语句编写函数&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;fn&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;x&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; x;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;2.使用Function()构造函数克隆函数&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; fn=&lt;span class=&quot;keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;Function&lt;/span&gt;(&lt;span class=&quot;string&quot;&gt;&quot;x&quot;&lt;/span&gt;,&lt;span class=&quot;string&quot;&gt;&quot;return x;&quot;&lt;/span&gt;)&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;3.使用函数直接量生成函数&lt;/p&gt;
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; fn=&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;x&lt;/span&gt;)&lt;/span&gt;&amp;#123; &lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; x;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;然后这些定义函数的方式以及效果相近，但是也存在很多差异&lt;/p&gt;
+&lt;p&gt;&lt;table border=&quot;1&quot;&gt;&lt;br&gt;    &lt;tr&gt;&lt;br&gt;        &lt;td&gt;&lt;/td&gt;&lt;td&gt;使用function语句&lt;/td&gt;&lt;td&gt;使用Function构造函数&lt;/td&gt;&lt;td&gt;使用函数直接量&lt;/td&gt;&lt;br&gt;    &lt;/tr&gt;&lt;br&gt;    &lt;tr&gt;&lt;br&gt;        &lt;td&gt;兼容&lt;/td&gt;&lt;td&gt;完全&lt;/td&gt;&lt;td&gt;javascript 1.1 以上&lt;/td&gt;&lt;td&gt;javascript1.2以上&lt;/td&gt;&lt;br&gt;    &lt;/tr&gt;&lt;br&gt;    &lt;tr&gt;&lt;br&gt;        &lt;td&gt;形式&lt;/td&gt;&lt;td&gt;句子&lt;/td&gt;&lt;td&gt;表达式&lt;/td&gt;&lt;td&gt;表达式&lt;/td&gt;&lt;br&gt;    &lt;/tr&gt;&lt;br&gt;    &lt;tr&gt;&lt;br&gt;        &lt;td&gt;名称&lt;/td&gt;&lt;td&gt;有名&lt;/td&gt;&lt;td&gt;匿名&lt;/td&gt;&lt;td&gt;匿名&lt;/td&gt;&lt;br&gt;    &lt;/tr&gt;&lt;br&gt;    &lt;tr&gt;&lt;br&gt;        &lt;td&gt;主体&lt;/td&gt;&lt;td&gt;标准语法&lt;/td&gt;&lt;td&gt;字符串&lt;/td&gt;&lt;td&gt;标准语法&lt;/td&gt;&lt;br&gt;    &lt;/tr&gt;&lt;br&gt;    &lt;tr&gt;&lt;br&gt;        &lt;td&gt;性质&lt;/td&gt;&lt;td&gt;静态&lt;/td&gt;&lt;td&gt;动态&lt;/td&gt;&lt;td&gt;静态&lt;/td&gt;&lt;br&gt;    &lt;/tr&gt;&lt;br&gt;    &lt;tr&gt;&lt;br&gt;        &lt;td&gt;解析&lt;/td&gt;&lt;td&gt;以命令的形式构造一个函数&lt;/td&gt;&lt;td&gt;解析函数题，能够动态创建一个新的函数对象&lt;/td&gt;&lt;td&gt;以表达式的形式构造一个函数对象&lt;/td&gt;&lt;br&gt;    &lt;/tr&gt;&lt;/table&gt;&lt;/p&gt;
+&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;h3 id=&quot;函数作用域比较&quot;&gt;&lt;a href=&quot;#函数作用域比较&quot; class=&quot;headerlink&quot; title=&quot;函数作用域比较:&quot;&gt;&lt;/a&gt;函数作用域比较:&lt;/h3&gt;&lt;p&gt;使用Function构造函数创建的函数具有顶级作用域，js的解析器也总是把它作为顶级的函数来编译，而function语句和函数直接量定义的函数都有自己的作用域既局部作用域或者说是函数作用域。&lt;br&gt;eg:&lt;br&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; n=&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; n=&lt;span class=&quot;number&quot;&gt;2&lt;/span&gt;;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;e&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; n;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; e;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;hexo 的第一篇博客内容正在整理中即将发布，尽情期待。&lt;/p&gt;
-
+      javascript虽然是基于对象的，但是对象不是第一型的，而函数式第一型。
     
     </summary>
     
+      <category term="Javascript基础" scheme="http://yoursite.com/categories/Javascript%E5%9F%BA%E7%A1%80/"/>
     
-      <category term="函数式编程 javascript基础 Function" scheme="http://yoursite.com/tags/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B-javascript%E5%9F%BA%E7%A1%80-Function/"/>
+    
+      <category term="javascript 函数式编程" scheme="http://yoursite.com/tags/javascript-%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/"/>
     
   </entry>
   
@@ -42,7 +52,7 @@
     <link href="http://yoursite.com/2016/05/20/hello-world/"/>
     <id>http://yoursite.com/2016/05/20/hello-world/</id>
     <published>2016-05-19T23:30:40.000Z</published>
-    <updated>2016-05-19T23:30:40.000Z</updated>
+    <updated>2016-05-23T14:18:44.000Z</updated>
     
     <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
 &lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
