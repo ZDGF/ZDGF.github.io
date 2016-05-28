@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-05-28T07:19:38.000Z</updated>
+  <updated>2016-05-28T07:21:31.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/05/28/%E2%80%9C%E4%BB%80%E4%B9%88%E6%98%AF%E5%87%BD%E6%95%B0%E6%9F%AF%E9%87%8C%E5%8C%96%E2%80%9D/"/>
     <id>http://yoursite.com/2016/05/28/“什么是函数柯里化”/</id>
     <published>2016-05-28T06:38:51.000Z</published>
-    <updated>2016-05-28T07:19:38.000Z</updated>
+    <updated>2016-05-28T07:21:31.000Z</updated>
     
     <content type="html">&lt;p&gt;函数柯里化是把接受多个参数的函数变成接受一个单一参数的函数，并且返回一个新函数，这个函数能接收原函数的参数。&lt;/p&gt;
 &lt;h2 id=&quot;eg&quot;&gt;&lt;a href=&quot;#eg&quot; class=&quot;headerlink&quot; title=&quot;eg:&quot;&gt;&lt;/a&gt;eg:&lt;/h2&gt;&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;9&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;title&quot;&gt;adder&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;num&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;function&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;function&lt;/span&gt;(&lt;span class=&quot;params&quot;&gt;x&lt;/span&gt;)&lt;/span&gt;&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		&lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; num + x;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; a5=adder(&lt;span class=&quot;number&quot;&gt;5&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;var&lt;/span&gt; a6=adder(&lt;span class=&quot;number&quot;&gt;6&lt;/span&gt;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(a5(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;built_in&quot;&gt;console&lt;/span&gt;.log(a6(&lt;span class=&quot;number&quot;&gt;1&lt;/span&gt;));&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
@@ -35,7 +35,7 @@
     
     <summary type="html">
     
-      javascript虽然是基于对象的，但是对象不是第一型的，而函数式第一型。
+      函数柯里化是把接受多个参数的函数变成接受一个单一参数的函数，并且返回一个新函数，这个函数能接收原函数的参数。
     
     </summary>
     
